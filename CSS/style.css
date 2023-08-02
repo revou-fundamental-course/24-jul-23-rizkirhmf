@@ -2,3 +2,18 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+#form {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+        max-width: 450px;
+    height: 650px;
+    border-radius: 8px;
+    margin-left: 30px;
+    margin-right: 60px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
