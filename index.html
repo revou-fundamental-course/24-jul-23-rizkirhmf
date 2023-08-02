@@ -10,18 +10,39 @@
 
 <!--batas sini, yang di bawah coba-coba-->
 <!--image:-->
-<center><img src="https://th.bing.com/th/id/OIP.PCRzAZoRuATiXIC6oxSiJQHaIE?pid=ImgDet&rs=1.jpeg"alt="traveling seluruh dunia" width="200" height="200/>"</center>
+<center><img src="https://th.bing.com/th/id/OIP.PCRzAZoRuATiXIC6oxSiJQHaIE?pid=ImgDet&rs=1.jpeg"alt="traveling seluruh dunia" width="200" height="200"/></center>
 
 <!--form-->
-<form action=""method="post">
+<section id="form">
+    <div class="form-container">
+        <h2>Contact Us!</h2>
+        <p>
+            <b>Tim kami akan menghubungi anda 1x24 jam setelah data kami terima.</b>
+        </p>
+        <form action="#"method="post" onsubmit="return validateForm()">
     <label for="name">Your Name:</label>
-    <input type="text" id="name" name="name required placeholder="Example Name">
+    <input type="text" id="name" name="name" required placeholder="First and Last Name">
         <br/>
-        <br>
+        <br/>
     <label for email="email">Email Address:</label>
     <input type="text" id="email" name="email" required placeholder="example@mail.com">
         <br/>
-    <input type="submit" value="Submit>
+        <br/>
+    <label class="Travel Destination">Travel Destination:</label>
+        <select>
+            <option disable selectede value="">Select Option</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Palembang">Palembang</option>
+            <option value="Bali">Bali</option>
+            <option value="Jogjakarta">Jogjakarta</option>
+        </select>
+        <br/>
+        <br/>
+            <input type="submit"value="SUBMIT">
 
-</form>
+        </form>
+    </div>
+</section>
+
 
