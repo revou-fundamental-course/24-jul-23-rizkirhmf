@@ -138,7 +138,7 @@ h1 {
     margin-bottom: 20px;
   }
   
-  /* Gaya untuk tombol "Send" */
+  /* Gaya untuk tombol "Submit" */
   .form-container input[type="submit"] {
     background-color: #007BFF;
     color: #fff;
@@ -258,7 +258,7 @@ h1 {
 }
 
 /* Gaya untuk tombol "contact us" */
-button.contact-button {
+.contact-button {
   display: block; /* Mengubah tombol menjadi elemen block agar bisa diatur lebar */
   margin: 10px auto; /* Agar tombol berada di tengah secara horizontal */
   padding: 15px 30px; /* Perbesar tombol dengan padding */
@@ -271,7 +271,7 @@ button.contact-button {
   transition: background-color 0.3s ease-in-out; /* Efek transisi saat dihover */
 }
 
-button.contact-button:hover {
+.contact-button:hover {
   background-color: #0056b3; /* Efek perubahan warna saat dihover */
 }
 
@@ -279,7 +279,7 @@ button.contact-button:hover {
 .footer {
   background-color: #f2f2f2;
   padding: 20px;
-  text-align: justify-left; /* Menyimpan semua teks di tengah */
+  text-align: center; /* Menyimpan semua teks di tengah */
 }
 
 /* Gaya untuk teks pada footer */
