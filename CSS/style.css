@@ -1,43 +1,395 @@
-body {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/*navigation bar*/
-.container {
-    border: 5px solid #ffcc5c;
+/* Gaya dasar untuk memastikan tata letak yang benar */
+.navbar {
     display: flex;
-    justify-content: flex-end;
-}
-
-div{
-    background-color:grey;
-    width: 900px; height: 500px;
-}
-.container >div {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dfe8e9;
     padding: 10px;
+  }
+  
+  .navbar-title {
+    margin: 30; /* Menghilangkan margin bawaan */
+  }
+  
+  ul {
+    list-style: none; /* Menghilangkan bullet point pada daftar menu */
+    margin: 0; /* Menghilangkan margin bawaan */
+    padding: 0; /* Menghilangkan padding bawaan */
+    display: flex;
+  }
+  
+  li {
+    margin-left: 20px; /* Memberi ruang antara setiap elemen menu (opsional) */
+  }
+  
+  /* Untuk membuat daftar menu (ul) berada di sebelah kanan */
+  .navbar ul {
+    margin-left: auto;
+  }
+  
+  /* Efek hover pada elemen menu (li) */
+  .navbar li:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  /* Transisi efek ketika berpindah dari hover */
+  .navbar li {
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  /* Menghilangkan garis bawah pada tautan */
+.navbar li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Gaya untuk menu yang muncul di sisi kanan (tampilan mobile) */
+
+
+  /* Gaya untuk mengatur teks menjadi tebal pada h1 */
+h1 {
+    font-weight: bold;
+  }
+  
+  /* Gaya untuk mengatur warna teks menjadi abu-abu pada p */
+  p {
+    color: gray;
+  }
+  
+  /* Gaya untuk memposisikan teks di tengah */
+  .centered-text {
     text-align: center;
-    font-size: 14sp;
-    color: #ffeead
-    border 2px solid;
-    background-color: green
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap; /* Mengizinkan flex items (child elements) berada dalam beberapa baris */
+    gap: 20px; /* Jarak antara child elements */
 }
 
-.logo {
-    margin-right: auto
+/* Gaya untuk bagian kiri (Banner Section) */
+#banner {
+    flex: 10; /* Memanfaatkan ruang yang tersedia agar memenuhi setengah lebar halaman */
+    padding: 20px; /* Padding untuk memberi ruang di sekeliling konten */
+    overflow: hidden; /* Menghilangkan bagian gambar yang keluar dari wadah (kotak) */
 }
 
-#form {
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-        max-width: 450px;
-    height: 650px;
-    border-radius: 8px;
-    margin-left: 30px;
-    margin-right: 60px;
-    background-color: aliceblue;
-    margin-bottom: 20px;
+/* ... (gaya CSS untuk elemen lain) ... */
+
+/* Gaya untuk sesi Packages */
+#packages {
+    flex: 1; /* Memanfaatkan ruang yang tersedia agar memenuhi setengah lebar halaman */
+    padding: 20px; /* Padding untuk memberi ruang di sekeliling konten */
+}
+  .slider {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Efek transisi slide dengan durasi 1 detik */
+    width: 100%; /* Menentukan lebar slider menjadi 100% dari container */
+  }
+  
+  .slider img {
+    width: 700%; /* Mengecilkan gambar agar sesuai dengan wadah slider */
+    flex-shrink: 0; /* Mencegah gambar menjadi lebih kecil daripada container slider */
+    margin-right: 10px; /* Memberi jarak antara gambar */
+  }
+  
+  .packages-intro p {
+    font-weight: bold;
+    color: black;
+  }
+
+  /* Gaya untuk bagian kanan (Section lain) */
+  #contact {
+    flex: 1; /* Memanfaatkan ruang yang tersedia agar memenuhi setengah lebar halaman */
+    padding: 20px; /* Padding untuk memberi ruang di sekeliling konten */
+    /* Tambahkan gaya sesuai konten yang ingin ditampilkan di bagian kanan */
+  }
+  /* Gaya untuk form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
-    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Gaya untuk judul "Contact Us" */
+  .form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk label */
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Gaya untuk input dan select */
+  .form-container input,
+  .form-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Gaya untuk tombol "Send" */
+  .form-container input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+/* Gaya dasar info box */
+.info-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 300px;
+  margin: 10px auto 0; /* Tambahkan 10px margin atas */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  transform: translateX(-30%);
+}
+
+/* Gaya gambar */
+.info-box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya teks */
+.info-details {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.info-details h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.info-details p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.jumbotron {
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Gaya untuk judul di dalam jumbotron */
+.jumbotron h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Gaya untuk teks di dalam jumbotron */
+.jumbotron p {
+  font-size: 18px;
+  color: #666;
+}
+
+
+/* Gaya dasar untuk card-container */
+.upper-container, .lower-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Gaya untuk kartu */
+.card {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efek transisi saat dihover */
+  flex: 0 1 calc(33.333% - 20px); /* Atur lebar kartu agar 3 kartu dapat menempati 100% lebar kontainer */
+  /* Atur lebar kartu sesuai kebutuhan */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efek angkat kartu saat dihover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan saat dihover */
+}
+
+/* Gaya untuk gambar pada kartu */
+.card-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Gaya untuk judul pada kartu */
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Gaya untuk teks pada kartu */
+.card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Gaya untuk tombol "contact us" */
+button.contact-button {
+  display: block; /* Mengubah tombol menjadi elemen block agar bisa diatur lebar */
+  margin: 10px auto; /* Agar tombol berada di tengah secara horizontal */
+  padding: 15px 30px; /* Perbesar tombol dengan padding */
+  font-size: 18px; /* Ukuran teks tombol */
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Efek transisi saat dihover */
+}
+
+button.contact-button:hover {
+  background-color: #0056b3; /* Efek perubahan warna saat dihover */
+}
+
+/* Gaya untuk footer */
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: justify-left; /* Menyimpan semua teks di tengah */
+}
+
+/* Gaya untuk teks pada footer */
+.footer p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0; /* Tambahkan jarak 5px di atas dan bawah setiap teks */
+}
+
+
+/* Gaya untuk tampilan mobile */
+@media (max-width: 360px) and (max-height: 800px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+  }
+
+  .navbar-title {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .menu li {
+    padding: 8px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .menu.active .line:nth-child(1),
+  .menu.active .line:nth-child(3) {
+    transform: rotate(45deg);
+  }
+
+  .menu.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  /* Konten */
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box,
+  .form-container,
+  .jumbotron,
+  .upper-container,
+  .lower-container {
+    max-width: 100%;
+  }
+
+  .content img {
+    width: 100%;
+  }
+
+  /* Package Cards */
+  .upper-container,
+  .lower-container {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 10px;
+    flex: 1 1 100%;
+  }
+
+  /* Footer */
+  .footer p {
+    font-size: 12px;
+  }
 }
