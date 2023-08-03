@@ -3,13 +3,17 @@ body {
     margin-bottom: 20px;
 }
 
-/*navigation*/
+/*navigation bar*/
 .container {
     border: 5px solid #ffcc5c;
     display: flex;
     justify-content: flex-end;
 }
 
+div{
+    background-color:grey;
+    width: 900px; height: 500px;
+}
 .container >div {
     padding: 10px;
     text-align: center;
@@ -17,6 +21,10 @@ body {
     color: #ffeead
     border 2px solid;
     background-color: green
+}
+
+.logo {
+    margin-right: auto
 }
 
 #form {
